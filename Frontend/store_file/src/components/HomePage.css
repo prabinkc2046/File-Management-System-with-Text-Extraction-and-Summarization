@@ -1,0 +1,57 @@
+/* HomePage.css */
+.homepage-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.welcome-card {
+    background: linear-gradient(135deg, #f5a623, #f093fb);
+    color: white;
+}
+
+.login-card {
+    background: linear-gradient(135deg, #20c997, #1cc9e2);
+    color: white;
+}
+
+.upload-card {
+    background: linear-gradient(135deg, #ff6f61, #ff9671);
+    color: white;
+}
+
+.view-card {
+    background: linear-gradient(135deg, #845ec2, #d65db1);
+    color: white;
+}
+
+.restrictions-card {
+    background: linear-gradient(135deg, #f3c623, #d9a617);
+    color: white;
+}

@@ -1,0 +1,54 @@
+.file-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: height 0.5s ease, transform 0.5s ease;
+    width: 250px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.file-card.expanded {
+    height: 300px; /* Adjust this as needed */
+    transform: scale(1.05);
+}
+
+.file-card h3 {
+    margin-top: 0;
+}
+
+.file-card p {
+    margin: 10px 0;
+}
+
+.view-more {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.view-more:hover {
+    background-color: #0056b3;
+}
+
+.file-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.file-card:hover {
+    transform: rotateY(10deg);
+}
